@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pysh"
+version = "0.1.0"
+description = "A hybrid shell that runs Python and shell commands"
+readme = "README.md"
+requires-python = ">=3.9"
+authors = [{ name = "sigge" }]
+
+[project.scripts]
+pysh = "pysh.shell:main"
+
+[tool.setuptools.packages.find]
+include = ["pysh*"]
